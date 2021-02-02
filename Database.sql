@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `tbl_users` (
 `userName` varchar(100) NOT NULL,
 `userEmail` varchar(100) NOT NULL UNIQUE,
 `userPass` varchar(100) NOT NULL,
-`userRegdate DATETIME NOT NULL,
+`userRegdate datetime NOT NULL,
 `userStatus` enum('Y','N') NOT NULL DEFAULT 'N',
 `tokenCode` varchar(100) NOT NULL,
 PRIMARY KEY (`userID`)
